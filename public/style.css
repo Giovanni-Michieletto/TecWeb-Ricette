@@ -48,7 +48,7 @@ body::-webkit-scrollbar-track{
    background-color: antiquewhite;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   
 
 }
 
@@ -167,7 +167,7 @@ p{
 }
 
 .links2{
-   padding: 1em;
+   
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -269,17 +269,14 @@ p{
 	clear: both;
   
 }
-.absolute{
-   position: absolute;
-   bottom: 0;
-}
+
 /* fare class absolute */
 /* ============================ */
 /* ============MOBILE========== */
 /* ============================ */
 
 @media screen and (min-width:300px){
-   .links {
+   /* .links {
       display: grid;
       grid-template-columns: auto auto ;
       padding: 0;
@@ -297,22 +294,69 @@ p{
       letter-spacing: 3px;
       font-weight: bold;
       font-size: 1.1em;
+   } */
+   .header{
+      justify-content: center;
+   }
+   .header h1{
+      display: none;
+   }
+   .header img{
+      width: 40%;
+   }
+   .menu{
+      background-color: blanchedalmond;
+      flex-wrap: wrap;
+   }
+   .links2{
+      min-width: 150px;
+   }
+   .links2 a img{
+      display: none;
+   }
+   .card-container{
+      grid-template-columns: auto;
+      justify-content: center;
+   }
+   #footer{
+      flex-direction: column;
    }
 }
 /* ============================ */
 /* ============TABLET========== */
 /* ============================ */
 @media screen and (min-width:600px){
+   .header{
+      justify-content: space-between;
+   }
    .header img{
       width: 12%;
       
    }
    .header h1{
-      
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      /* margin-right: 15%; */
+      margin: 0;
       color: lightcoral;
       letter-spacing: 0.3em;
-      margin-right: 30%;
+      
    }
+   .links2{
+      padding: 0.1em;
+   }
+   .links2 a img{
+      display: flex;
+   }
+   #footer{
+      flex-direction: row;
+   }
+   .absolute{
+      position: absolute;
+      bottom: 0;
+   }
+  
 }
 
 /* ============================ */
@@ -326,8 +370,12 @@ p{
       grid-template-columns: auto auto auto;
       justify-content: space-evenly;
    }
-
-
+   /* .header h1{
+      margin-right: 30%;
+   } */
+   .links2{
+      padding: 1em 0.5em;
+   }
 }
 
 
