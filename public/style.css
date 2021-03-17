@@ -38,6 +38,9 @@ body::-webkit-scrollbar-track{
    height: 20%;
    min-height: 2em;
 }
+.padding-2{
+   padding: 2em 0;
+}
 
 .margin-7 {
 	margin: 0 7% 0 7%;
@@ -296,7 +299,8 @@ p{
 	border: 2px solid rgb(148, 148, 148);
 	padding: 1.5em;
 	border-radius: 13px;
-	background-color: blanchedalmond;
+	/* background-color: blanchedalmond; */
+   background-color: white;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
 	-ms-border-radius: 13px;
