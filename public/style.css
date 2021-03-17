@@ -210,7 +210,7 @@ p{
 	width: 17em;
 	min-width: 230px;
 	margin-bottom: 2rem;
-	height: 16em;
+	height: 17em;
 	border: 2px solid #ccc;
 	border-radius: 5px;
    background-color: white;
@@ -229,7 +229,7 @@ p{
 .card-title {
 	border-radius: 5px 5px 0 0;
 	padding: 0.7rem;
-	height: 3em;
+	height: 1.5em;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -255,7 +255,23 @@ p{
 .card-img img {
 	width: 100%;
 	object-fit: cover;
-	padding: 0 0.2em
+	/* padding: 0 0.2em */
+}
+.info{
+   display: flex;
+   justify-content: space-between;
+   text-align: end;
+   padding: 1em;
+}
+.info p{
+   padding: 0;
+}
+.tempo{
+   display: flex;
+   align-items: center;
+}
+.tempo p{
+   padding:0 0 0 0.2em;
 }
 /* FOOTER */
 #footer {
