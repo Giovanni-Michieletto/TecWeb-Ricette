@@ -202,6 +202,25 @@ p{
    -o-border-radius: 5%;
 }
 
+.image-container{
+   display: flex;
+   justify-content: space-evenly;
+   vertical-align: middle;
+   align-items: center;
+}
+.esempio{
+   width: 20%;
+   height: 15%;
+   border-radius: 5%;
+   -webkit-border-radius: 5%;
+   -moz-border-radius: 5%;
+   -ms-border-radius: 5%;
+   -o-border-radius: 5%;
+}
+.logo-home{
+   width: 30%;
+}
+
 /* ======================== */
 /* ===========CARD========= */
 /* ======================== */
