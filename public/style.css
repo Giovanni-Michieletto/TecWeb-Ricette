@@ -58,7 +58,7 @@ p{
 .percorso{
    font-size: 1.1em;
 	width: 100%;
-  padding-top: 2em;
+  padding: 2em 0;
 	height: 3em;
 	display: flex;
    flex-direction: row;
@@ -132,15 +132,13 @@ p{
 }
 
 .title {
-	margin: 0.5em 0 0.5em 3em;
+	
 	display: flex;
 	vertical-align: middle;
 	align-items: center;
 
 }
-.title img{
-   width: 5%;
-}
+
 .title h1{
 	font-weight: bold;
    font-size: 2.6em;
@@ -160,9 +158,9 @@ p{
 }
 
 .menu{
-   display: flex;
+   display: grid;
    width: 100%;
-   display: flex;
+   /* display: flex; */
    justify-content: space-evenly;
 }
 
@@ -304,12 +302,23 @@ p{
    .header img{
       width: 40%;
    }
+   .title img{
+      width: 15%;
+      margin-left: 2%;
+   }
    .menu{
+      /* grid-template-columns: auto auto auto; */
       background-color: blanchedalmond;
       flex-wrap: wrap;
    }
    .links2{
       min-width: 150px;
+   }
+   .links2 a p{
+      font-size: 1.1em;
+      font-weight: bold;
+      padding: 0.5em;
+      letter-spacing: 0.1em;
    }
    .links2 a img{
       display: none;
@@ -343,11 +352,27 @@ p{
       letter-spacing: 0.3em;
       
    }
+   .title{
+      margin: 0.5em 0 0.5em 3em;
+   }
+   .title img{
+      width: 5%;
+   }
+   .menu{
+      grid-template-columns: auto auto auto;
+   }
    .links2{
       padding: 0.1em;
    }
    .links2 a img{
       display: flex;
+   }
+   .links2 a p{
+      font-weight:normal;
+   }
+   .card-container{
+      grid-template-columns: auto auto;
+      justify-content: space-evenly;
    }
    #footer{
       flex-direction: row;
@@ -363,8 +388,11 @@ p{
 /* ============DESKTOP========== */
 /* ============================ */
 @media screen and (min-width:900px){
-   .links{
-		grid-template-columns: auto auto auto auto auto;
+   .menu{
+      grid-template-columns: auto auto auto auto auto;
+   }
+   .links2{
+      padding: 1em 0.5em;
 	}
    .card-container{
       grid-template-columns: auto auto auto;
@@ -373,9 +401,7 @@ p{
    /* .header h1{
       margin-right: 30%;
    } */
-   .links2{
-      padding: 1em 0.5em;
-   }
+   
 }
 
 
