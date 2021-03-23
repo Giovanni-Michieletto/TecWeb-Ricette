@@ -232,21 +232,19 @@ p{
 }
 
 .card {
-   
 	transition: width 0.3s ease-in-out;
 	width: 17em;
 	min-width: 230px;
 	margin-bottom: 2rem;
 	height: 17em;
 	border: 2px solid #ccc;
-	border-radius: 5px;
-   background-color: white;
+	border-radius: 10px;
+	background-color: white;
 	overflow: hidden;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 .card a{
 	text-decoration: none;
@@ -300,6 +298,33 @@ p{
 .tempo p{
    padding:0 0 0 0.2em;
 }
+.card:hover h3{
+   color: #A92322;
+}
+.TornaSu{
+   left: -9999px;
+}
+#TornaSu {
+	background-color: rgba(198, 88, 82, 0.6);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	color: white; 
+	line-height: 1.5rem;
+	cursor: pointer;
+}
+
 /* FOOTER */
 #footer {
 	width: 100%;
@@ -418,6 +443,12 @@ p{
    .links2 a img{
       display: none;
    }
+   .esempio{
+      display: none;
+   }
+   .logo-home{
+      display: none;
+   }
    .card-container{
       grid-template-columns: auto;
       justify-content: center;
@@ -464,6 +495,12 @@ p{
    }
    .links2 a p{
       font-weight:normal;
+   }
+   .esempio{
+      display: inline;
+   }
+   .logo-home{
+      display: inline;
    }
    .card-container{
       grid-template-columns: auto auto;
