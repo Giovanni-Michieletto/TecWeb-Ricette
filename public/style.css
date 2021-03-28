@@ -337,7 +337,7 @@ p{
 }
 
 /* FOOTER */
-#footer {
+footer {
 	width: 100%;
 	/* margin-top: 3rem; */
 	background-color:#01B8BD; 
@@ -412,13 +412,13 @@ p{
 .foto-martina{
    display: flex;
    justify-content: center;
-   width: 100%;
 
 }
 .foto-martina img{
    width: 40%;
    border-radius: 10px;
    margin: 1em 0;
+   min-width: 300px;
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
    -ms-border-radius: 10px;
@@ -489,7 +489,7 @@ p{
       grid-template-columns: auto;
       justify-content: center;
    }
-   #footer{
+   footer{
       flex-direction: column;
    }
 }
@@ -542,7 +542,7 @@ p{
       grid-template-columns: auto auto;
       justify-content: space-evenly;
    }
-   #footer{
+   footer{
       flex-direction: row;
    }
    .absolute{
