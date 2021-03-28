@@ -143,7 +143,7 @@ p{
 }
 
 .title {
-	
+	width: 100%;
 	display: flex;
 	vertical-align: middle;
 	align-items: center;
@@ -225,11 +225,22 @@ p{
 /* ===========CARD========= */
 /* ======================== */
 .card-container{
-   width: 100%;
-   margin: 1em 0;
-	display: grid;
-   grid-template-columns: auto auto  auto;
+   margin-top: 1em;
+   width: 90%;
+   /* margin: 1em 0; */
+	/* display: grid; */
+   /* grid-template-columns: auto auto  auto; */
 }
+
+
+
+
+
+
+
+
+
+
 
 .card {
 	transition: width 0.3s ease-in-out;
@@ -533,7 +544,68 @@ p{
    /* .header h1{
       margin-right: 30%;
    } */
+   .card-desktop{
+      margin: 1em 0;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+   }
    
+   .card-desktop:hover h3,
+   .card-desktop:hover .info,
+   .card-desktop:hover .tempo{
+      color:indianred;
+   }
+   
+   .card-desktop a{
+      display: flex;
+      text-decoration: none;
+      color: black;
+   }
+   .card-img-desktop{
+      display: flex;
+      width: 50%;
+      height: 50%;  
+   }
+   .card-desktop img{
+      width: 40%;
+      min-width: 300px;
+      border-radius: 10px 0 0 10px;
+      -webkit-border-radius: 10px 0 0 10px;
+      -moz-border-radius: 10px 0 0 10px;
+      -ms-border-radius: 10px 0 0 10px;
+      -o-border-radius: 10px 0 0 10px;
+   }
+   .card-info-container{
+      display: flex;
+      flex-direction: column;
+   }
+   .card-title-desktop{
+      margin-top: 1em;
+      display: flex;
+      align-items: center;
+   }
+   .card-title-desktop h3{
+      font-size: 1.5em;
+      margin-left: 1em;
+   }
+   .card-footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      bottom: 1em;
+   }
+   .info{
+      /* width: 20%; */
+      font-weight: bold;
+   }
+   .tempo{
+      font-weight: bold;
+      margin-right: 1em;
+   }
 }
 
 
