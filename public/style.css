@@ -181,6 +181,21 @@ p{
    flex-direction: column;
    text-align: center;
 }
+.not-link{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+.not-link img{
+   width: 10em;
+   height: 7em;
+   opacity: 0.5;
+   border-radius: 5%;
+   -webkit-border-radius: 5%;
+   -moz-border-radius: 5%;
+   -ms-border-radius: 5%;
+   -o-border-radius: 5%;
+}
 .links2:hover{
    background-color: darkgray;
    border-radius: 5%;
@@ -201,9 +216,7 @@ p{
    -ms-border-radius: 5%;
    -o-border-radius: 5%;
 }
-.contatti-img{
-   background-color: aqua;
-}
+
 
 .image-container{
    display: flex;
@@ -481,6 +494,9 @@ footer {
    /* .menu{
       
    } */
+   .not-link{
+      min-width: 150px;
+   }
    .links2{
       min-width: 150px;
    }
@@ -564,7 +580,9 @@ footer {
    .title img{
       width: 5%;
    }
-  
+   .not-link{
+      padding: 0.1em;
+   }
    .links2{
       padding: 0.1em;
    }
@@ -632,6 +650,9 @@ footer {
 @media screen and (min-width:900px){
    .menu{
       grid-template-columns: auto auto auto auto;
+   }
+   .not-link{
+      padding: 1em 0.5em;
    }
    .links2{
       padding: 1em 0.5em;
