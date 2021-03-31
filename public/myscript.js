@@ -8,7 +8,7 @@ function Tornasu(){
    setTimeout(  
       function(){
          $("html, body").animate({ scrollTop: 0}, "slow")
-      },170
+      },290
    );
 
 }
