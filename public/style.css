@@ -123,7 +123,7 @@ p{
    min-height: 35em; /*da togliere qunado si riepirà per bene la pagina*/
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
    background-color: white;
 }
 .container-presentazione{
@@ -197,17 +197,17 @@ p{
    -o-border-radius: 5%;
 }
 .links2:hover{
-   transition: 0.3s ease-in-out;
+   transition: 0.4s ease-in;
    background-color: darkgray;
    border-radius: 5%;
    -webkit-border-radius: 5%;
    -moz-border-radius: 5%;
    -ms-border-radius: 5%;
    -o-border-radius: 5%;
-   -webkit-transition: 0.3s ease-in-out;
-   -moz-transition: 0.3s ease-in-out;
-   -ms-transition: 0.3s ease-in-out;
-   -o-transition: 0.3s ease-in-out;
+   -webkit-transition: 0.4s ease-in;
+   -moz-transition: 0.4s ease-in;
+   -ms-transition: 0.4s ease-in;
+   -o-transition: 0.4s ease-in;
 }
 .links2 a p{
    padding: 0.3em;
@@ -249,8 +249,12 @@ p{
 /* ===========CARD========= */
 /* ======================== */
 .card-container{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    margin-top: 1em;
-   width: 90%;
+   
    /* margin: 1em 0; */
 	/* display: grid; */
    /* grid-template-columns: auto auto  auto; */
@@ -388,6 +392,7 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
 }
 /* fare class absolute */
 /* ============================ */
@@ -624,6 +629,9 @@ footer {
       letter-spacing: 0.3em;
       
    }
+   .menu{
+      background-color: white;
+   }
    .title{
       margin: 0.5em 0 0.5em 3em;
    }
@@ -650,9 +658,8 @@ footer {
       display: inline;
    }
    .card-container{
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-
       justify-content: space-evenly;
    }
 
@@ -716,14 +723,14 @@ footer {
    } */
 
    
-   .card-container{
+   /* .card-container{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-   }
+   } */
    .card{
-      width: 90%;
+      width: 80%;
       height: 100%;
       border: 2px solid #ccc;
       border-radius: 10px;
