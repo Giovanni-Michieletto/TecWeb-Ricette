@@ -660,12 +660,74 @@ footer {
       display: inline;
    }
    .card-container{
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
       justify-content: space-evenly;
    }
 
-
+   .card{
+      width: 80%;
+      height: 100%;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+   }
+   
+   .card:hover h3,
+   .card:hover .info,
+   .card:hover .tempo{
+      color:indianred;
+   }
+   
+   .card a{
+      display: flex;
+      text-decoration: none;
+      color: black;
+   }
+   .card-img{
+      display: flex;
+      width: 50%;
+      height: 50%;  
+   }
+   .card img{
+      width: 40%;
+      min-width: 240px;
+      max-width: 250px;
+      border-radius: 10px 0 0 10px;
+      -webkit-border-radius: 10px 0 0 10px;
+      -moz-border-radius: 10px 0 0 10px;
+      -ms-border-radius: 10px 0 0 10px;
+      -o-border-radius: 10px 0 0 10px;
+   }
+   .card-info-container{
+      display: flex;
+      flex-direction: column;
+   }
+   .card-title{
+      margin-top: 1em;
+      display: flex;
+      align-items: center;
+   }
+   .card-title h3{
+      font-size: 1.5em;
+      margin-left: 1em;
+   }
+   .card-footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      bottom: 1em;
+   }
+   .info{
+      font-weight: bold;
+   }
+   .tempo{
+      font-weight: bold;
+      margin-right: 1em;
+   }
    
    .contatti-container article{
       width: 80%;
@@ -762,6 +824,7 @@ footer {
    .card img{
       width: 40%;
       min-width: 300px;
+      max-width: none;
       border-radius: 10px 0 0 10px;
       -webkit-border-radius: 10px 0 0 10px;
       -moz-border-radius: 10px 0 0 10px;
