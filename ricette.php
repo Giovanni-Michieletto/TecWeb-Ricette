@@ -31,7 +31,6 @@
                         $definition .= '</div>';
                     $definition .= '</a>';
                 $definition .= '</div>';
-
             }
         }
         else {

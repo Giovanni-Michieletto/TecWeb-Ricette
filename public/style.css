@@ -2,6 +2,9 @@
 	box-sizing: border-box;
 	margin:0 0;
 }
+html {
+   height: 100%;
+}
 body{
 	font-family: 'Roboto Condensed', sans-serif;
 	width: 100%;
@@ -117,6 +120,7 @@ p{
 .background{
    background-image: url(./img/background1.jpg);
    background-size: 22%;
+   min-height: 80vh;
 }
 .container{
    height: 100%;
@@ -293,6 +297,7 @@ p{
 /* FOOTER */
 footer {
 	width: 100%;
+   min-height: 13vh;
 	/* margin-top: 3rem; */
 	background-color:#01B8BD; 
 	display: flex;

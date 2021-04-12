@@ -36,6 +36,7 @@
                         "AltImmagine" => $row["AltImmagine"],
                         "Ingredienti" => $row["Ingredienti"],
                         "Testo" => $row["Testo"],
+                        "Hashtag" => $row["Hashtag"],
                     );
                     array_push($list,$cell);
                     }
@@ -60,15 +61,16 @@
                     "AltImmagine" => $queryResult["AltImmagine"],
                     "Ingredienti" => $queryResult["Ingredienti"],
                     "Testo" => $queryResult["Testo"],
+                    "Hashtag" => $queryResult["Hashtag"],
                 );   
                 return $cell;
             }
         }
 
         //Funzione per l'inserimento dei dati
-        public function insertFile($Nome,$Difficolta,$Tempo,$Immagine,$AltImmagine,$Ingredienti,$Testo) {
+        public function insertFile($Nome,$Difficolta,$Tempo,$Immagine,$AltImmagine,$Ingredienti,$Testo,$Hashtag) {
             $table = "Ricette(Nome,Difficolta,Tempo,Immagine,AltImmagine,Ingredienti,Testo)";
-            $value ="(\"$Nome\",\"$Difficolta\",\"$Tempo\",\"$Immagine\",\"$AltImmagine\",\"$AltImmagine\",\"$Testo\")";
+            $value ="(\"$Nome\",\"$Difficolta\",\"$Tempo\",\"$Immagine\",\"$AltImmagine\",\"$Ingredienti\",\"$Testo\",\"$Hashtag\")";
             $queryInsert = "INSERT INTO $table VALUES $value";
             $queryResult = mysqli_query($this->connection,$queryInsert);
             if(mysqli_affected_rows($this->connection) > 0) {
@@ -79,21 +81,21 @@
             }
         }
 
-        /*//Funzione modifica dati
-        public function updateFile($table,$Titolo,$Immagine,$AltImmagine,$Testo,$ID) {
-            $list = $this->getFile($table);
+        //Funzione modifica dati
+        public function updateFile($ID,$Nome,$Difficolta,$Tempo,$Immagine,$AltImmagine,$Ingredienti,$Testo,$Hashtag) {
+            $list = $this->getFile();
             foreach ($list as $cell) {
                 if($ID == $cell['ID']) {
                     if($Immagine != $cell['Immagine']) {
-                        $directory = $_SERVER['DOCUMENT_ROOT'] . str_replace('./','/TecWeb/',$cell['Immagine']);
+                        $directory = $_SERVER['DOCUMENT_ROOT'] . str_replace('./','/TecWeb-Ricette/',$cell['Immagine']);
                         unlink($directory);
                     }
-                    if($Titolo==$cell['Titolo'] && $Immagine==$cell['Immagine'] && $AltImmagine==$cell['AltImmagine'] && $Testo==$cell['Testo']) {
+                    if($Nome==$cell['Nome'] && $Difficolta==$cell['Difficolta'] && $Tempo==$cell['Tempo'] && $Immagine==$cell['Immagine'] && $AltImmagine==$cell['AltImmagine'] && $Ingredienti==$cell['Ingredienti'] && $Testo==$cell['Testo'] && $Hashtag==$cell['Hashtag']) {
                         return true;
                     }
                 }
             }
-            $queryInsert = "UPDATE $table SET Titolo=\"$Titolo\", Immagine=\"$Immagine\", AltImmagine=\"$AltImmagine\", Testo=\"$Testo\" WHERE $table . ID=\"$ID\"";
+            $queryInsert = "UPDATE Ricette SET Nome=\"$Nome\", Difficolta=\"$Difficolta\", Tempo=\"$Tempo\", Immagine=\"$Immagine\", AltImmagine=\"$AltImmagine\", Ingredienti=\"$Ingredienti\", Testo=\"$Testo\", Hashtag=\"$Hashtag\" WHERE Ricette . ID=\"$ID\"";
             $queryResult = mysqli_query($this->connection,$queryInsert);
             if(mysqli_affected_rows($this->connection) > 0) {
                 return true;
@@ -104,17 +106,17 @@
         }
 
         //Funzione elimina dati
-        public function deleteFile($table,$ID) {
-            $list = $this->getFile($table);
+        public function deleteFile($ID) {
+            $list = $this->getFile();
             if($list) {
                 foreach ($list as $cell) {
                     if($ID == $cell['ID']) {
-                        $directory = $_SERVER['DOCUMENT_ROOT'] . str_replace('./','/TecWeb/',$cell['Immagine']);
+                        $directory = $_SERVER['DOCUMENT_ROOT'] . str_replace('./','/TecWeb-Ricette/',$cell['Immagine']);
                         unlink($directory);
                     }
                 }
             }
-            $queryInsert = "DELETE FROM $table WHERE $table . ID=\"$ID\"";
+            $queryInsert = "DELETE FROM Ricette WHERE Ricette . ID=\"$ID\"";
             $queryResult = mysqli_query($this->connection,$queryInsert);
             if(mysqli_affected_rows($this->connection) > 0) {
                 return true;
@@ -122,7 +124,7 @@
             else {
                 return false;
             }
-        }*/
+        }
 
         // Login
         public function getLogin() {
