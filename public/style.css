@@ -2,11 +2,6 @@
    font-family: Balonku;
    src: url(./font/BalonkuRegular-la1w.otf);
 }
-#titolo {
-   font-family: Balonku;
-   font-weight: bold;
-   font-size: 7em;
-}
 *{
 	box-sizing: border-box;
 	margin:0 0;
@@ -303,17 +298,22 @@ p{
 /* FOOTER */
 footer {
 	width: 100%;
-   min-height: 13vh;
+   min-height: 12vh;
 	/* margin-top: 3rem; */
-	background-color:#01B8BD; 
+	/*background-color:#01B8BD;*/
+   background-color: #c19a6b; 
 	display: flex;
 	align-items: center;
+   text-align: center;
 	justify-content: space-between;
 	color: black;
 	padding: 1em 0;
-	clear: both;
-  
+   line-height: 1.5em;
 }
+footer a {
+   color: black;
+}
+
 
 /* PAGINA LETTURA */
 .content{
@@ -412,6 +412,9 @@ justify-content: center;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
+}
+.contatti-container a {
+   color: #a20000;
 }
 /* fare class absolute */
 /* ============================ */
@@ -681,11 +684,12 @@ justify-content: center;
       width: 100%;
       display: flex;
       justify-content: center;
-      /* margin-right: 15%; */
       margin: 0;
-      color: lightcoral;
+      color: #a20000;
       letter-spacing: 0.3em;
-      
+      font-family: Balonku;
+      font-weight: bold;
+      font-size: 5vw;
    }
    .menu{
       background-color: white;
@@ -707,7 +711,9 @@ justify-content: center;
       display: flex;
    }
    .links2 a p , .not-link p{
-      font-weight:normal;
+      letter-spacing: 0.1em;
+      font-family: Balonku;
+      font-size: 1.8vw;
    }
    
    .logo-home{
