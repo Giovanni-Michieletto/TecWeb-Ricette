@@ -267,9 +267,9 @@ p{
 
 
 
-.card:hover h3{
+/* .card:hover h3{
    color: #A92322;
-}
+} */
 .TornaSu{
    left: -9999px;
 }
@@ -572,7 +572,10 @@ justify-content: center;
    .info{
       padding: 0.3em;
       margin-left: 0.5em;
+      font-weight: bold;
    }
+
+      
    .info p{
       padding: 0;
    }
@@ -580,6 +583,7 @@ justify-content: center;
       display: flex;
       align-items: center;
       margin-right: 1em;
+      font-weight: bold;
    }
    .tempo p{
       padding:0 0 0 0.2em;
@@ -621,7 +625,7 @@ justify-content: center;
     -o-border-radius: 5px;
 }  
    button:hover{
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
    }
    .contatti-container article{
       width: 100%;
@@ -731,9 +735,9 @@ justify-content: center;
       -o-border-radius: 10px;
    }
    
-   .card:hover h3,
-   .card:hover .info,
-   .card:hover .tempo{
+   .card:hover a h3,
+   .card:hover a .info,
+   .card:hover a .tempo{
       color:indianred;
    }
    
@@ -777,11 +781,8 @@ justify-content: center;
       justify-content: space-between;
       bottom: 1em;
    }
-   .info{
-      font-weight: bold;
-   }
+   
    .tempo{
-      font-weight: bold;
       margin-right: 1em;
    }
    .option-admin{
