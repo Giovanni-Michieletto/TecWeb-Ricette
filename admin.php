@@ -33,8 +33,17 @@
                             $definition .= '</div>';
                         $definition .= '</div>';
                     $definition .= '</div>';
-                    $definition .= '<a href="modify.php?ID='.$cell['ID'].'">Modifica</a>';
-                    $definition .= '<a href="delete.php?ID='.$cell['ID'].'" />Elimina</a>';
+                    $definition .= '<div class="option-admin">';
+                        $definition .= '<button type="submit" name="Modifica">Modifica</button>';
+                        $definition .= '<button type="submit" name="Elimina">Elimina</button>';
+                        $definition .='</div>';
+                //     <div class="option-admin">
+                //     <button type="submit" name="Nuovo" id="bottone">Nuovo</button>  
+                //     <button type="submit" name="Modifica">Modifica</button>
+                //     <button type="submit" name="Elimina">Elimina</button>
+                //  </div>
+                    // $definition .= '<a href="modify.php?ID='.$cell['ID'].'">Modifica</a>';
+                    // $definition .= '<a href="delete.php?ID='.$cell['ID'].'" />Elimina</a>';
                 $definition .= '</div>';
             }
         }

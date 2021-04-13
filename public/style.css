@@ -356,7 +356,23 @@ footer {
 .text{
 	font-size: 1.3em;
 }
-
+.nuova-ricetta{
+   width: 100%;
+   display: flex;
+justify-content: center;
+}
+.nuova-ricetta a{
+   text-decoration: none;
+   color: white;
+   background-color: lightcoral;
+   padding: 0.5em 1.5em;
+   margin: 1em 0;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
 /* .chef{
    display: flex;
 
@@ -486,7 +502,7 @@ footer {
       width: 17em;
       min-width: 230px;
       margin-bottom: 2rem;
-      height: 23em;
+      height: 100%;
       border: 2px solid #ccc;
       border-radius: 10px;
       background-color: white;
@@ -587,6 +603,26 @@ footer {
    /* .contatti{
       width: 50%;
    } */
+   .option-admin{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0.3em 0;
+   }
+   button{
+    background-color: lightcoral;
+    padding: 0.5em 1.5em;
+    color: white;
+    border: 1px solid lightcoral;
+    cursor:pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}  
+   button:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   }
    .contatti-container article{
       width: 100%;
       display: flex;
@@ -748,7 +784,12 @@ footer {
       font-weight: bold;
       margin-right: 1em;
    }
-   
+   .option-admin{
+      flex-direction: column;
+   }
+   button{
+      margin: 0 0.5em 0 0;
+   }
    .contatti-container article{
       width: 80%;
       display: flex;
