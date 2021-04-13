@@ -684,6 +684,7 @@ footer {
    }
 
    .card{
+      display: flex;
       width: 80%;
       height: 100%;
       border: 2px solid #ccc;
