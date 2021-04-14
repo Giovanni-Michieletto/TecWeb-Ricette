@@ -1,7 +1,7 @@
 <?php
     require_once "dbConnection.php";
     session_start();
-    $find = $_POST['find'];
+    $find = $_POST['cerca'];
     $page = file_get_contents('ricette.html');
     $dbAccess = new DBAccess();          
     $connection = $dbAccess->openDBConnection();
@@ -9,7 +9,7 @@
         $list = $dbAccess->getFile();  
         if ($list) {  
             foreach ($list as $cell) {
-                if(strpos(strtolower($cell['Nome']),strtolower($cerca)) || strpos(strtolower($cell['Ingredienti']),strtolower($cerca)) ||  strpos(strtolower($cell['Testo']),strtolower($cerca)) || strpos(strtolower($cell['Hashtag']),strtolower($cerca))){
+                if(strpos(strtolower($cell['Nome']),strtolower($find)) || strpos(strtolower($cell['Ingredienti']),strtolower($find)) ||  strpos(strtolower($cell['Testo']),strtolower($find)) || strpos(strtolower($cell['Hashtag']),strtolower($find))){
                     $anteprima = substr($cell['Testo'],0,250) . " ...";
                     $definition = '<div class="card">';
                         $definition .= '<a href="singolo.php?ID='.$cell['ID'].'">';
