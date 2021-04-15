@@ -351,8 +351,10 @@ input[type=text], input[type=password] {
    margin: 0.7em 0.5em;
 }
 
-
-
+#logo-footer {
+   width: 25%;
+   padding: 0.5em 0;
+}
 
 
 
@@ -395,7 +397,7 @@ footer {
    text-align: center;
 	justify-content: space-between;
 	color: black;
-	padding: 1em 0;
+	padding: 1.5em 0 0 0;
    line-height: 1.5em;
 }
 footer a {
