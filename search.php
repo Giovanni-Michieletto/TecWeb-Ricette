@@ -1,4 +1,5 @@
 <?php
+ 
     require_once "dbConnection.php";
     session_start();
     $find = $_POST['cerca'];
