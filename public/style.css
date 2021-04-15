@@ -74,15 +74,17 @@ body::-webkit-scrollbar-track{
 p{
    font-size: 1.1em;
 }
-.percorso{
-   font-size: 1.1em;
+#percorso{
+   position: absolute;
+   left: -9999px;
+   /* font-size: 1.1em;
 	width: 100%;
    padding: 2em 0;
 	height: 3em;
 	display: flex;
    flex-direction: row;
 	align-items: center;
-	color: rgb(104, 5, 5);
+	color: rgb(104, 5, 5); */
 }
 .textbutton{
    display: flex;
