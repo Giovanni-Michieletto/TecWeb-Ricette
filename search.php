@@ -44,7 +44,8 @@
         else {
             $definition = '<p>Nessun ricetta presente</p>';  
         } 
-        $page = str_replace("Ricerca","RIsultati della riccerca per: ".$find,$page);
+        $page = str_replace("Ricerca2","risultati della ricerca per ".$find,$page);
+        $page = str_replace("Ricerca","Risultati della ricerca per: ".$find,$page);
         $page = str_replace("<p>Errore di caricamento</p>",$definition,$page);
     }
     echo $page;
