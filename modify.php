@@ -9,6 +9,7 @@
 
     $ID = $_GET['ID'];
     $page = file_get_contents('compiledForm.html');
+    $page = str_replace("Ricetta","Modifica Ricetta",$page);
 
     $dbAccess = new DBAccess();
     $connection = $dbAccess->openDBConnection();
@@ -50,7 +51,7 @@
                             $page = str_replace('valueIngredienti',$Ingredienti,$page);
                             $page = str_replace('valueTesto',$Testo,$page);
                             $page = str_replace('valueHashtag',$Hashtag,$page);
-                            $page = str_replace('insert.php','modify.php?ID='.$ID,$page);
+                            $page = str_replace('admin.php','modify.php?ID='.$ID,$page);
                             echo $page;
                             break;
                         }
@@ -70,7 +71,6 @@
                 $page = str_replace('valueHashtag"',$Hashtag.'" readonly ',$page);
                 $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
                 $page = str_replace('Submit','Torna alla pagina amministrazione',$page);
-                $page = str_replace('insert.php','admin.php',$page);
             }
             else {
                 $page = str_replace("Errore","Errore nel caricamento",$page);
@@ -79,7 +79,6 @@
         }
         else {
             if($ricetta) {
-                echo "else";
                 $page = str_replace("Errore","Modificare i seguenti campi se necessario, per modificare l'immagine è necessario un nuovo inserimento",$page);
                 $page = str_replace('valueNome',$ricetta['Nome'],$page);
                 $page = str_replace('valueDifficoltà',$ricetta['Difficolta'],$page);
@@ -89,7 +88,7 @@
                 $page = str_replace('valueIngredienti',$ricetta['Ingredienti'],$page);
                 $page = str_replace('valueTesto',$ricetta['Testo'],$page);
                 $page = str_replace('valueHashtag',$ricetta['Hashtag'],$page);
-                $page = str_replace('insert.php','modify.php?ID='.$ID,$page);
+                $page = str_replace('admin.php','modify.php?ID='.$ID,$page);
                 echo $page;
             }
         }

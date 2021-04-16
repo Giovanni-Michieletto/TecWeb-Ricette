@@ -63,18 +63,16 @@
             <div class="title">
                 <h2 class="title-img">
                     <i class="fas fa-utensils"></i>  <!-- cambiare immagine-->
-                </h2>
-                <h2 >      
-                    Nuova ricetta
+                    Ricetta
                 </h2>
             </div>
             <!-- CORPO FORM -->
             <div class="card-container">
                 <strong>Errore</strong>
-                <form enctype="multipart/form-data" id="form" method="post" action="insert.php">
+                <form enctype="multipart/form-data" id="form" method="post" action="admin.php">
                     <fieldset>
                         <label for="Nome">Nome*: </label>
-                        <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+" size="150" value="valueNome" required/>  
+                        <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+.*" size="150" value="valueNome" required/>  
                     </fieldset>
                     <fieldset>
                         <label for="Difficolta">Difficoltà*: </label>
