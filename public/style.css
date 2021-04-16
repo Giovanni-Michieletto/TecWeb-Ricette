@@ -600,9 +600,7 @@ justify-content: center;
    .links2 a img , .not-link img{
       display: none;
    }
-   .welcome h2{
-     width: 80%;
-   }
+  
    .logo-home{
       display: none;
    }
