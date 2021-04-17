@@ -427,7 +427,7 @@ footer a {
 	display: flex;
 	flex-direction: column;
 	margin-top: 2em;
-	margin-bottom: 2em;
+	/* margin-bottom: 2em; */
 	border: 2px solid rgb(148, 148, 148);
 	padding: 1.5em;
 	border-radius: 13px;
