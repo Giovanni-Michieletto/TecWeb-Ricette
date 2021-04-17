@@ -429,7 +429,7 @@ footer a {
 	margin-top: 2em;
 	/* margin-bottom: 2em; */
 	border: 2px solid rgb(148, 148, 148);
-	padding: 1.5em;
+	/* padding: 1.5em; */
 	border-radius: 13px;
 	/* background-color: blanchedalmond; */
    background-color: white;
@@ -438,7 +438,9 @@ footer a {
 	-ms-border-radius: 13px;
 	-o-border-radius: 13px;
 }
-
+.content h1{
+   color: darksalmon;
+}
 #title{
 	display: flex;
 	/* flex-direction: column; */
