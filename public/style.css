@@ -15,33 +15,40 @@ body{
 	height: 100%;
 	
 }
-body::-webkit-scrollbar {
-	height: 5px;
-   width: 5px;
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
-/* body::-webkit-scrollbar {
-	height: 4px;
-	width: 4px;
-	} */
-	body::-webkit-scrollbar-thumb {
-	background:#01B8BD;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
-   box-shadow: inset 0px 0px #01B8BD;
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
 }
-body::-webkit-scrollbar-corner {
-	background:#035659;
+::-webkit-scrollbar-thumb {
+  background: #d6aeae;
+  border: 0px none #fcfcfc;
+  border-radius: 20px;
 }
-body::-webkit-scrollbar-track{
-   background: #fff;
-   border: 0;
-   /* box-shadow: inset 7px 10px 12px ; */
+::-webkit-scrollbar-thumb:hover {
+  background: #bf9c9c;
 }
-::-webkit-progress-bar{
-   width: 0;
+::-webkit-scrollbar-thumb:active {
+  background: #e1a8a8;
 }
+::-webkit-scrollbar-track {
+  background: #fffafa;
+  border: 0px solid #fcfdfd;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #fdf2f2;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .size{
    padding: 0.5em;
    font-size: 1.3em;
