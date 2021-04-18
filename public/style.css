@@ -665,6 +665,7 @@ justify-content: center;
    }
    
    .card a{
+      flex-direction: column;
       text-decoration: none;
       color: black;
    }
@@ -830,6 +831,7 @@ justify-content: center;
 @media screen and (min-width:600px){
    .header{
       justify-content: space-between;
+      height: 9vh;
    }
    .header img{
       width: 12%;
@@ -917,6 +919,7 @@ justify-content: center;
       display: flex;
       text-decoration: none;
       color: black;
+      flex-direction: row;
    }
    .card-img{
       display: flex;
@@ -934,7 +937,7 @@ justify-content: center;
       -o-border-radius: 10px 0 0 10px;
    }
    .card-info-container{
-      width: 70%;
+      width: 80%;
       display: flex;
       flex-direction: column;
    }
@@ -1019,6 +1022,12 @@ justify-content: center;
 /* ============DESKTOP========== */
 /* ============================ */
 @media screen and (min-width:900px){
+   .header{
+      height: 14vh;
+   }
+   .header h1{
+      font-size: 5vw;
+   }
    .background{
       background-size: 22%;
    }
