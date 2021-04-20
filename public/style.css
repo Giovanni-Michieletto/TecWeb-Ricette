@@ -84,6 +84,10 @@ body{
 	padding: 0.5em;
 }
 
+.error {
+	color: red;
+}
+
 .header{
    width: 100%;
    min-height: 6vh;

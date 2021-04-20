@@ -11,6 +11,7 @@
    <meta name="language" content="italian it" />
    <link rel="icon" href="./public/img/logo.ico"/>
    <link rel="stylesheet" href="./public/style.css" media="screen">
+   <script type="text/javascript" src="./public/myscript.js"></script>
 </head>
 <body>
    <div class="header">
@@ -47,24 +48,27 @@
          </div>
       <div id="container-login">
          <strong>Inserire utente e password</strong>
-         <form enctype="multipart/form-data" method="post" action="login.php">
+         <form enctype="multipart/form-data" method="post" action="login.php" id="login">
             <fieldset class="align">
                <div class="title-amministration">
-                  <label for="Username"><span xml:lang="en">Username*</span>: </label>
+                  <label for="Username" data-error-msg="Per favore, inserisci l'username dell'admin è necessario"><span xml:lang="en">Username*</span>: </label>
                </div>
                <div class="text-box">
                   <span>
-                     <input type="text" id="Username" name="Username"/>
+                     <input type="text" id="Username" name="Username" placeholder="Username"
+                     required="required"/>
                   </span>
                </div>
             </fieldset>
             <fieldset class="align">
                <div class="title-amministration">
-                  <label for="Password"><span xml:lang="en">Password*</span>: </label>
+                  <label for="Password" data-error-msg="Per favore, inserisci la password è necessaria"><span xml:lang="en">Password*</span>: </label>
                </div>
                <div class="text-box">
                   <span>
-                     <input type="password" name="Password" id="Password"/>
+                     <input type="password" name="Password" id="Password" minlength="1"
+                     placeholder="Password"
+                     required="required"/>
                   </span>
                </div>
             </fieldset>
