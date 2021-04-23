@@ -16,25 +16,26 @@ function Tornasu(){
 
 var inputNuovoForm = [{
    "query": "input[type=text]",
-   "validators": [validateRequired, validateLength]
+   "validators": [validateRequired, validateLength, validateInput]
    }, {
    "query": "input[type=file]",
    "validators": [validateRequired, validateImageFile]
    }, {
    "query": "textarea",
-   "validators": [validateRequired, validateLength]
+   "validators": [validateRequired, validateLength, validateInput]
 }  ]
 
 var inputLoginAdmin = [{
       "query": "input[type=text], input[type=password]",
-      "validators": [validateRequired, validateLength]
+      "validators": [validateRequired, validateLength, validateAdmin]
 }  ]
 
 function validateForm (){
+alert("vugi");
 eliminaErrori();
 var form, checks
 var isLogin = document.getElementById('login') !== null;
-form = isLogin ? document.forms['login'] : document.forms['invio'];
+form = isLogin ? document.forms['login'] : document.forms['form'];
 checks = isLogin ? inputLoginAdmin : inputNuovoForm;
 return checks.map((check) => validate(check, form)).reduce((previous, current) => previous && current);
 }
@@ -84,4 +85,13 @@ return ((files.length === 1)
 
 function validateRequired(input) {
 return input.hasAttribute("required")? input.value != "" : true;
+}
+
+function validateAdmin(input) {
+   return input.value==="admin";
+}
+
+function validateInput(input) {
+   const pattern = input.getAttribute("pattern");
+   return pattern.test(input.value);
 }
