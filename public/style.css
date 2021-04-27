@@ -338,7 +338,7 @@ p{
 }
 #form fieldset{
    display: flex;
-   align-items: flex-start;
+   align-items: center;
 }
 fieldset{
    width: 80%;
@@ -349,6 +349,7 @@ fieldset{
    border: none;
    margin: 0 0 0.5em 0;
 }
+
 input[type=text], input[type=password], textarea {
    width: 100%;
    min-width: 13em;
@@ -410,7 +411,7 @@ label{
    left: -9999px;
 }
 #TornaSu {
-	background-color: rgba(198, 88, 82, 0.6);
+	background-color: #A20000;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
