@@ -11,7 +11,7 @@
     $dbAccess = new DBAccess();          
     $connection = $dbAccess->openDBConnection(); 
     if($connection)  {
-        if($_GET['value']) {
+        if($_GET['value']!=null) {
             $dbAccess->deleteFile($ID);  
             header('Location: admin.php',TRUE);
         }
