@@ -56,7 +56,7 @@
                <div class="text-box">
                   <span>
                      <input type="text" id="Username" name="Username" placeholder="Username"
-                     required="required"/>
+                     required="required" maxlength="20" pattern="[a-zA-Z]+.*"/>
                   </span>
                </div>
             </fieldset>
@@ -66,9 +66,8 @@
                </div>
                <div class="text-box">
                   <span>
-                     <input type="password" name="Password" id="Password" minlength="1"
-                     placeholder="Password"
-                     required="required"/>
+                     <input type="password" name="Password" id="Password" maxlength="20"
+                     placeholder="Password" required="required" pattern="[a-zA-Z]+.*"/>
                   </span>
                </div>
             </fieldset>

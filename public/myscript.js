@@ -1,8 +1,3 @@
-// $('#TornaSu').click(
-//    function(){
-//       $("html, body").animate({ scrollTop: 0 }, "slow");
-//    }
-// )
 function Tornasu(){
    setTimeout(  
       function(){
@@ -10,9 +5,6 @@ function Tornasu(){
       },290
    );
 }
-// function Tornasu(){
-//    $("html, body").animate({scrollTop: 0}, { duration: 2000}, 'easeout');
-// }
 
 var inputNuovoForm = [{
    "query": "input[type=text]",
@@ -27,7 +19,7 @@ var inputNuovoForm = [{
 
 var inputLoginAdmin = [{
       "query": "input[type=text], input[type=password]",
-      "validators": [validateRequired, validateLength, validateAdmin]
+      "validators": [validateRequired, validateLength, validateInput]
 }  ]
 
 function validateForm (){
@@ -84,10 +76,6 @@ return ((files.length === 1)
 
 function validateRequired(input) {
 return input.hasAttribute("required")? input.value != "" : true;
-}
-
-function validateAdmin(input) {
-   return input.value==="admin";
 }
 
 function validateInput(input) {
