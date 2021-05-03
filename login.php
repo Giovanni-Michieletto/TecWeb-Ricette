@@ -16,12 +16,12 @@
                 header('Location: admin.php',TRUE);
             }
             else {
-                //da fare errore dati, aspetto la parte html
+                $page = str_replace('<strong>Inserire utente e password</strong>','<strong class="error">Password o username errati - Inserire utente e password corretti</strong>',$page);
                 echo $page;
             }
         }
         else {
-            //da fare errore connessione, aspetto la parte html
+            $page = str_replace('<strong>Inserire utente e password</strong>','<strong class="error">Errore di collegamento al database</strong>',$page);
             echo $page;
         }
     }

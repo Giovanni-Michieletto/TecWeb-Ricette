@@ -632,7 +632,8 @@ justify-content: center;
       grid-template-columns: auto auto;
    }
    .hidden {
-      display: none;
+      position:absolute;
+      left: -10000000px;
    }
    .not-link{
       min-width: 150px;
