@@ -412,16 +412,14 @@ label{
 }
 #TornaSu {
 	background-color: #A20000;
-	width: 60px;
-	height: 60px;
+	
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	position: fixed;
-	bottom: 9%;
-	right: 11%;
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -867,7 +865,12 @@ justify-content: center;
    .contatti a{
       padding: 1em;
    }
-
+   #TornaSu{
+      width: 50px;
+	   height: 50px;
+      bottom: 4%;
+	   right: 7%;
+   }
    footer{
       flex-direction: column;
    }
@@ -1054,7 +1057,12 @@ justify-content: center;
    .contatti a{
       font-size: 1.3em;
    }
-
+   #TornaSu{
+      width: 60px;
+      height: 60px;
+      bottom: 9%;
+	   right: 11%;
+   }
    footer{
       flex-direction: row;
    }
