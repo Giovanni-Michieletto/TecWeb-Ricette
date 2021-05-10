@@ -14,7 +14,7 @@
     <meta name="author" content="gruppo TecWeb" />
     <meta name="language" content="italian it" />
     <link rel="stylesheet" href="./public/style.css" media="screen">
-    <script type="text/javascript" src="./public/myscript.js"></script>
+    <script type="text/javascript" src="./public/script.js"></script>
 </head>
 <body>
     <div class="header">
@@ -60,45 +60,45 @@
                 <p>Ti trovi in: Nuova ricetta</p>
             </div>
             <div class="card-container">
-                <form enctype="multipart/form-data" id="form" method="post" action="insert.php" onsubmit="return validateForm()" novalidate>
+                <form enctype="multipart/form-data" id="form" method="post" action="insert.php" onsubmit="return validation()" novalidate>
                     <fieldset>
                         <label for="Nome" data-error-msg="È necessario inserire un nome!">Nome*: </label>
-                        <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+.*"  maxlength="150" required="required"/>  
+                        <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+.*"  maxlength="150" required="required" data-rules="required"/>  
                     </fieldset>
                     <fieldset>
                         <label for="Difficolta" data-error-msg="È necessario inserire una difficoltà!">Difficoltà*: </label>
-                        <input type="text" id="Difficolta" name="Difficolta" placeholder="Difficoltà" title="Difficoltà della ricetta" pattern="[a-zA-Z]+.*"  maxlength="50" required="required"/>  
+                        <input type="text" id="Difficolta" name="Difficolta" placeholder="Difficoltà" title="Difficoltà della ricetta" pattern="[a-zA-Z]+.*"  maxlength="50" required="required" data-rules="required"/>  
                     </fieldset>
                     <fieldset>
                         <label for="Tempo" data-error-msg="È necessario inserire un tempo di cottura!">Tempo*: </label>
-                        <input type="text" id="Tempo" name="Tempo" placeholder="Tempo" title="Tempo necessario per eseguire la ricetta" pattern="[a-zA-Z0-9]+.*"  maxlength="50"  required="required" />  
+                        <input type="text" id="Tempo" name="Tempo" placeholder="Tempo" title="Tempo necessario per eseguire la ricetta" pattern="[a-zA-Z0-9]+.*"  maxlength="50"  required="required" data-rules="required"/>  
                     </fieldset>
                     <fieldset> 
                         <div>
                             <label for="Immagine" data-error-msg="È necessario inserire un'immagine!">Immagine*: </label>
-                            <input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta"  maxlength="50" required="required"/>
+                            <input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta"  maxlength="50" required="required" data-rules="file_required"/>
                         </div>
                         <div>
                             <label for="AltImmagine" data-error-msg="È necessario inserire una breve descrizione!">Descrizione immagine*:</label>
-                            <input type="text" id="AltImmagine" name="AltImmagine" placeholder="AltImmagine" title="Descrizione necessaria per permettere agli utenti non vedenti di percepire il contesto dell'Immagine" pattern="[a-zA-Z0-9]+.*"  maxlength="150" required="required"/>
+                            <input type="text" id="AltImmagine" name="AltImmagine" placeholder="AltImmagine" title="Descrizione necessaria per permettere agli utenti non vedenti di percepire il contesto dell'Immagine" pattern="[a-zA-Z0-9]+.*" maxlength="150" required="required" data-rules="required"/>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="Ingredienti" data-error-msg="È necessario inserire gli ingredienti!">Ingredienti*: </label>
-                            <textarea id="Ingredienti" name="Ingredienti" rows="30" cols="100" placeholder="Inserire gli ingredienti andando a capo per ognuno" title="Ingredienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required="required"></textarea>
+                            <textarea id="Ingredienti" name="Ingredienti" rows="30" cols="100" placeholder="Inserire gli ingredienti andando a capo per ognuno" title="Ingredienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required="required" data-rules="required"></textarea>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="Testo" data-error-msg="È necessario scrivere una descrizione!">Testo*: </label>
-                            <textarea id="Testo" name="Testo" rows="30" cols="100" placeholder="Testo" title="Passaggi e procedienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required="required"></textarea>
+                            <textarea id="Testo" name="Testo" rows="30" cols="100" placeholder="Testo" title="Passaggi e procedienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required="required" data-rules="required"></textarea>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="Hashtag" data-error-msg="È necessario inserire degli hashtag!">Hashtag*: </label>
-                            <input type="text" id="Hashtag" name="Hashtag" placeholder="Hashtag" title="Hashtag per facilitare la ricerca" pattern="[a-zA-Z0-9]+.*"  maxlength ="150" required="required"/>
+                            <input type="text" id="Hashtag" name="Hashtag" placeholder="Hashtag" title="Hashtag per facilitare la ricerca" pattern="[a-zA-Z0-9]+.*" maxlength ="150" required="required" data-rules="required"/>
                         </div>
                     </fieldset>
                     <fieldset class="button-conferma">
