@@ -12,15 +12,11 @@ const validators = {
         return user.test(input.value);
     },
     password : function(input) {
-        const psw = /^[a-zA-Z0-9_-]{6,18}$/;
+        const psw = /^[a-zA-Z0-9_-]{5,18}$/;
         return psw.test(input.value);
     },
-    pattern1 : function(input) {
+    pattern : function(input) {
         const expr = /^[a-zA-Z0-9]+.*$/;
-        return expr.test(input.value);
-    },
-    pattern2 : function(input) {
-        const expr = /^[a-zA-Z]+.*$/;
         return expr.test(input.value);
     },
     required : function(input){
