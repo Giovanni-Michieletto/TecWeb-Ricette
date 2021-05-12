@@ -61,7 +61,7 @@
             </div>
             <div class="card-container">
                 <strong>Errore</strong>
-                <form enctype="multipart/form-data" id="form" method="post" action="valueAction" onsubmit="return validation()" novalidate>
+                <form enctype="multipart/form-data" id="form" method="post" action="valueAction" onsubmit="return validation()">
                     <fieldset>
                         <label for="Nome" data-error-msg="È necessario inserire un nome!">Nome*: </label>
                         <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+.*" maxlength="150" required="required" data-rules="required,pattern,maxlength" value="valueNome"/>  
