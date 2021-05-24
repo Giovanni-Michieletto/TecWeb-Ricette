@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="italian">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400; display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/faf93335fe.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="icon" href="./public/img/logo.ico"/>
+    <title>Dolci in Campagna</title>
+    <meta name="title" content="Dolci in campagna"/>
+    <meta name="dexcription" content="raccolta di ricette per dolci di tutti i generi"/>
+    <meta name="keyword" content="dolci, ricette, torte, creme, torte in forno, ingredienti "/>
+    <meta name="author" content="gruppo TecWeb" />
+    <meta name="language" content="italian it" />
+    <link rel="stylesheet" href="./public/style.css" media="screen">
+    <script type="text/javascript" src="./public/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Dolci in Campagna</h1>
+    </div>
+    <div class="background">
+        <div id="starter" class="container margin-7">
+            <div class="spacer-top"></div>
+            <ul class="menu">
+                <li class="links2">
+                <a href="./index.php">
+                    <img src="./public/img/home.png" alt="">
+                    <p>Home</p>
+                </a>
+            </li>
+                <li class="links2">
+                    <a href="./ricette.php">
+                        <img src="./public/img/ricette.png" alt="">
+                        <p>Ricette</p>
+                    </a>
+                </li>
+                <li class="links2">
+                <a href="./chef.html">
+                    <img src="./public/img/chef.png" alt="">
+                    <p>Mi presento</p>
+                </a>
+            </li>
+                <li class="links2">
+                <a href="./contatti.html">
+                    <img class="contatti-img" src="./public/img/contatti.png" alt="">
+                    <p>Contatti</p>
+                </a>
+            </li>
+            </ul>
+        <div class="spacer-top"></div>
+        <div id="search">
+            <form name="ricerca" method="GET" action="search.php" >
+                <fieldset class="form">
+                    <div class="textbutton">
+                    <input type="text" id="cerca" name="cerca" > 
+                    <input type="submit" class="cerca" name="submit" value="Cerca">   
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="title">
+            <h2 class="title-img">
+                <i class="fas fa-utensils"></i>    
+                Ricerca
+            </h2>
+        </div>
+        <div id="percorso">
+            <p>Ti trovi in: Ricerca2</p>
+        </div>
+        <div class="card-container">
+            <p>Errore di caricamento</p>
+        </div>
+        </div>  
+    </div>
+    <div id="TornaSu" onclick="Tornasu()" class="d-none">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+    <footer >
+        <img id="img_validCode" class="padding-05" src="./public/img/valid-xhtml10.png" alt="Logo di validità Html" />
+        <div class="container-text-footer margin-5">
+            <strong>
+                DOLCI IN CAMPAGNA
+            </strong>
+            <div>
+                <a href="admin.php">Amministrazione</a>
+            </div>
+            <p>
+                Sito creato per il progetto di Tecnologie Web 2020/2021
+            </p>
+            <img id="logo-footer" src="./public/img/logofinale.png" alt="Logo della pagina Dolci in Campagna" />
+        </div>
+        <img id="img_validCSS" class="padding-05" src="./public/img/vcss-blue.gif" alt="Logo di validità Css" />
+    </footer>
+</body>
+</html>

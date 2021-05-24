@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="italian">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <title>Dolci in Campagna</title>
+   <meta name="title" content="Dolci in campagna"/>
+   <meta name="dexcription" content="raccolta di ricette per dolci di tutti i generi"/>
+   <meta name="keyword" content="dolci, ricette, torte, creme, torte in forno, ingredienti "/>
+   <meta name="author" content="gruppo TecWeb" />
+   <meta name="language" content="italian it" />
+   <link rel="icon" href="./public/img/logo.ico"/>
+   <link rel="stylesheet" href="./public/style.css" media="screen">
+   <script type="text/javascript" src="./public/script.js"></script>
+</head>
+<body>
+   <div class="header">
+      <h1>Dolci in Campagna</h1>
+   </div>
+   <div class="background">
+      <div id="starter" class="container margin-7">
+         <div class="spacer-top"></div>
+         <ul class="menu">
+            <li class="links2">
+               <a href="./index.php">
+                  <img src="./public/img/home.png" alt="">
+                  <p>Home</p>   
+               </a>
+            </li>
+            <li class="links2">
+               <a href="./ricette.php">
+                  <img src="./public/img/ricette.png" alt="">
+                  <p>Ricette</p>
+               </a>
+            </li>
+            <li class="links2">
+               <a href="./chef.html">
+                  <img src="./public/img/chef.png" alt="">
+                  <p>Mi presento</p>
+               </a>
+            </li>
+            <li class="links2">
+               <a href="./contatti.html">
+                  <img class="contatti-img" src="./public/img/contatti.png" alt="">
+                  <p>Contatti</p>
+               </a>
+            </li>
+         </ul>
+      <div id="container-login">
+         <strong>Inserire utente e password</strong>
+         <form enctype="multipart/form-data" method="post" action="login.php" id="login" onsubmit="return validation()">
+            <fieldset class="align">
+               <div class="title-amministration">
+                  <label for="Username" data-error-msg="Inserire l'username corretto!"><span xml:lang="en">Username*</span>: </label>
+               </div>
+               <div class="text-box">
+                  <span>
+                     <input type="text" id="Username" name="Username" placeholder="Username"
+                     required="required" maxlength="20" pattern="[a-zA-Z0-9_-]{3,16}" data-rules="required,username,maxlength"/>
+                  </span>
+               </div>
+            </fieldset>
+            <fieldset class="align">
+               <div class="title-amministration">
+                  <label for="Password" data-error-msg="Inserire la password corretta!"><span xml:lang="en">Password*</span>: </label>
+               </div>
+               <div class="text-box">
+                  <span>
+                     <input type="password" name="Password" id="Password" maxlength="20"
+                     placeholder="Password" required="required" pattern="[a-zA-Z0-9_-]{5,18}" data-rules="required,password,maxlength"/>
+                  </span>
+               </div>
+            </fieldset>
+            <fieldset class="button-conferma">
+               <button class="conferma" type="submit" name="submit">Conferma</button>
+            </fieldset>
+         </form>
+      </div>
+   </div>
+   </div>
+   <footer >
+      <img id="img_validCode" class="padding-05" src="./public/img/valid-xhtml10.png" alt="Logo di validità Html" />
+      <div class="container-text-footer margin-5">
+         <strong>
+            DOLCI IN CAMPAGNA
+         </strong>
+         <p>
+            Sito creato per il progetto di Tecnologie Web 2020/2021
+         </p>
+         <img id="logo-footer" src="./public/img/logofinale.png" alt="Logo della pagina Dolci in Campagna" />
+      </div>
+      <img id="img_validCSS" class="padding-05" src="./public/img/vcss-blue.gif" alt="Logo di validità Css" />
+   </footer>
+</body>
+</html>
