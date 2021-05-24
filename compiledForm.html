@@ -64,42 +64,42 @@
                 <form enctype="multipart/form-data" id="form" method="post" action="valueAction" onsubmit="return validation()">
                     <fieldset>
                         <label for="Nome" data-error-msg="È necessario inserire un nome!">Nome*: </label>
-                        <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+.*" maxlength="150" required="required" data-rules="required,pattern,maxlength" value="valueNome"/>  
+                        <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+.*" maxlength="150" required="required" data-rules="required,pattern,maxlength" value="valueNome" aria-required="true" aria-label="Campo dove inserire il nome della ricetta"/>  
                     </fieldset>
                     <fieldset>
                         <label for="Difficolta" data-error-msg="È necessario inserire una difficoltà!">Difficoltà*: </label>
-                        <input type="text" id="Difficolta" name="Difficolta" placeholder="Difficoltà" title="Difficoltà della ricetta" pattern="[a-zA-Z]+.*" maxlength="50" required="required" data-rules="required,pattern,maxlength" value="valueDifficoltà"/>  
+                        <input type="text" id="Difficolta" name="Difficolta" placeholder="Difficoltà" title="Difficoltà della ricetta" pattern="[a-zA-Z]+.*" maxlength="50" required="required" data-rules="required,pattern,maxlength" value="valueDifficoltà" aria-required="true" aria-label="Campo dove inserire la difficoltà della ricetta"/>  
                     </fieldset>
                     <fieldset>
                         <label for="Tempo" data-error-msg="È necessario inserire un tempo di preparazione!">Tempo*: </label>
-                        <input type="text" id="Tempo" name="Tempo" placeholder="Tempo" title="Tempo necessario per eseguire la ricetta" pattern="[a-zA-Z0-9]+.*" maxlength="50"  required="required" data-rules="required,pattern,maxlength" value="valueTempo"/>  
+                        <input type="text" id="Tempo" name="Tempo" placeholder="Tempo" title="Tempo necessario per eseguire la ricetta" pattern="[a-zA-Z0-9]+.*" maxlength="50"  required="required" data-rules="required,pattern,maxlength" value="valueTempo" aria-required="true" aria-label="Campo dove inserire il tempo necessario alla preparazione della ricetta"/>  
                     </fieldset>
                     <fieldset> 
                         <div>
                             <label for="Immagine" data-error-msg="È necessario inserire un'immagine!">Immagine*: </label>
-                            <input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta"/>
+                            <input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" aria-required="true" aria-label="Campo dove inserire la foto della ricetta"/>
                         </div>
                         <div>
                             <label for="AltImmagine" data-error-msg="È necessario inserire una breve descrizione!">Descrizione immagine*:</label>
-                            <input type="text" id="AltImmagine" name="AltImmagine" title="Descrizione necessaria per permettere agli utenti non vedenti di percepire il contesto dell'Immagine" placeholder="AltImmagine" pattern="[a-zA-Z0-9]+.*" maxlength="150" required="required" data-rules="required,pattern,maxlength" value="valueAltImmagine"/>
+                            <input type="text" id="AltImmagine" name="AltImmagine" title="Descrizione necessaria per permettere agli utenti non vedenti di percepire il contesto dell'Immagine" placeholder="AltImmagine" pattern="[a-zA-Z0-9]+.*" maxlength="150" required="required" data-rules="required,pattern,maxlength" value="valueAltImmagine" aria-required="true" aria-label="Campo dove inserire una breve descrizion della ricetta per gli utenti con disabilità visive"/>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="Ingredienti" data-error-msg="È necessario inserire gli ingredienti!">Ingredienti*: </label>
-                            <textarea id="Ingredienti" name="Ingredienti" rows="30" cols="100" placeholder="Inserire gli ingredienti andando a capo per ognuno" title="Ingredienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required="required" data-rules="required,pattern">valueIngredienti</textarea>
+                            <textarea id="Ingredienti" name="Ingredienti" rows="30" cols="100" placeholder="Inserire gli ingredienti andando a capo per ognuno" title="Ingredienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required="required" data-rules="required,pattern" aria-required="true" aria-label="Campo dove inserire gli ingredienti necessari per la ricetta">valueIngredienti</textarea>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="Testo" data-error-msg="È necessario scrivere una descrizione!">Testo*: </label>
-                            <textarea id="Testo" name="Testo" rows="30" cols="100" placeholder="Testo" title="Passaggi e procedienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required="required" data-rules="required,pattern">valueTesto</textarea>
+                            <textarea id="Testo" name="Testo" rows="30" cols="100" placeholder="Testo" title="Passaggi e procedienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required="required" data-rules="required,pattern" aria-required="true" aria-label="Campo dove inserire la descrizione dei passaggi della ricetta">valueTesto</textarea>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="Hashtag" data-error-msg="È necessario inserire degli hashtag!">Hashtag*: </label>
-                            <input type="text" id="Hashtag" name="Hashtag" placeholder="Hashtag" title="Hashtag per facilitare la ricerca" pattern="[a-zA-Z0-9]+.*" maxlength ="150" required="required" data-rules="required,pattern,maxlength" value="valueHashtag"/>
+                            <input type="text" id="Hashtag" name="Hashtag" placeholder="Hashtag" title="Hashtag per facilitare la ricerca" pattern="[a-zA-Z0-9]+.*" maxlength ="150" required="required" data-rules="required,pattern,maxlength" value="valueHashtag" aria-required="true" aria-label="Campo dove inserire le parole chiavi per ricercare la ricetta"/>
                         </div>
                     </fieldset>
                     <fieldset class="button-conferma">
