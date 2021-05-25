@@ -19,7 +19,7 @@
                     $definition .= '</div>';
                     $definition .= '<div class="card-info-container">';
                         $definition .= '<div class="card-title">';
-                            $definition .= '<h3>'.$cell['Nome'].'</h3>';
+                            $definition .= '<h3 tabindex=0>'.$cell['Nome'].'</h3>';
                         $definition .= '</div>';
                         $definition .= '<div class="card-info">';
                             $definition .= '<p>'.$anteprima.'</p>';

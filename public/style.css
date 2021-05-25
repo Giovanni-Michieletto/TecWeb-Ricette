@@ -906,7 +906,7 @@ justify-content: center;
       justify-content: center;
       align-items: center;
    }
-   .textbutton input[type="submit"]{
+   .textbutton button[type="submit"]{
       margin-left: 1em;
       margin-top: 0;
    }
