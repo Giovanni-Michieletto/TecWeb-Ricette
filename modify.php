@@ -46,7 +46,7 @@
                             $page = str_replace('valueNome',$Nome,$page);
                             $page = str_replace('valueDifficoltà',$Difficolta,$page);
                             $page = str_replace('valueTempo',$Tempo,$page);
-                            $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
+                            $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" aria-required="true" aria-label="Foto della ricetta"/>', '</br> <img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
                             $page = str_replace('valueAltImmagine',$AltImmagine,$page);
                             $page = str_replace('valueIngredienti',$Ingredienti,$page);
                             $page = str_replace('valueTesto',$Testo,$page);
@@ -70,7 +70,7 @@
                 $page = str_replace('>valueIngredienti',' readonly>'.$Ingredienti,$page);
                 $page = str_replace('>valueTesto',' readonly>'.$Testo,$page);
                 $page = str_replace('valueHashtag"',$Hashtag.'" readonly ',$page);
-                $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
+                $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" aria-required="true" aria-label="Foto della ricetta"/>', '</br> <img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
                 $page = str_replace('Submit','Torna alla pagina amministrazione',$page);
                 $page = str_replace('valueAction','admin.php',$page);
             }
@@ -86,7 +86,7 @@
                 $page = str_replace('valueDifficoltà',$ricetta['Difficolta'],$page);
                 $page = str_replace('valueTempo',$ricetta['Tempo'],$page);
                 $page = str_replace('valueAltImmagine',$ricetta['AltImmagine'],$page);
-                $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50"/> <img src="'.$ricetta['Immagine'].'" alt="'.$ricetta['AltImmagine'].'">',$page);
+                $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" aria-required="true" aria-label="Foto della ricetta"/>', '<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" aria-required="true" aria-label="Foto della ricetta"/> </br> <img src="'.$ricetta['Immagine'].'" alt="'.$ricetta['AltImmagine'].'">',$page);
                 $page = str_replace('valueIngredienti',$ricetta['Ingredienti'],$page);
                 $page = str_replace('valueTesto',$ricetta['Testo'],$page);
                 $page = str_replace('valueHashtag',$ricetta['Hashtag'],$page);

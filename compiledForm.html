@@ -17,6 +17,7 @@
     <script type="text/javascript" src="./public/script.js"></script>
 </head>
 <body>
+    <a class="hidden" href="#content">Salta la navigazione</a>
     <div class="header">
         <h1>Dolci in Campagna</h1>
     </div>
@@ -59,7 +60,7 @@
             <div id="percorso">
                 <p>Ti trovi in: Ricetta</p>
             </div>
-            <div class="card-container">
+            <div class="card-container" id="content">
                 <strong>Errore</strong>
                 <form enctype="multipart/form-data" id="form" method="post" action="valueAction" onsubmit="return validation()">
                     <fieldset>

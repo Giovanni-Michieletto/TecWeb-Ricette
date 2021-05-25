@@ -28,7 +28,7 @@
                         $page = str_replace('>valueIngredienti',' readonly>'.$cell['Ingredienti'],$page);
                         $page = str_replace('>valueTesto',' readonly>'.$cell['Testo'],$page);
                         $page = str_replace('valueHashtag"',$cell['Hashtag'].'" readonly ',$page);
-                        $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$cell['Immagine'].'" alt="'.$cell['AltImmagine'].'">',$page);
+                        $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" aria-required="true" aria-label="Foto della ricetta"/>', '</br> <img src="'.$cell['Immagine'].'" alt="'.$cell['AltImmagine'].'">',$page);
                         $page = str_replace('Submit','Conferma eliminazione',$page);
                         $page = str_replace('valueAction','delete.php?ID='.$ID.'&value=delete',$page);
                         echo $page;
