@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="italian">
+<html lang="it">
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -11,7 +11,7 @@
    <meta name="language" content="italian it" />
    <link rel="icon" href="./public/img/logo.ico"/>
    <link rel="stylesheet" href="./public/style.css" media="screen">
-   <script type="text/javascript" src="./public/script.js"></script>
+   <script src="./public/script.js"></script>
 </head>
 <body>
    <a class="hidden" href="#container-login">Salta la navigazione</a>
@@ -52,23 +52,21 @@
          <form enctype="multipart/form-data" method="post" action="login.php" id="login" onsubmit="return validation()">
             <fieldset class="align">
                <div class="title-amministration">
-                  <label for="Username" data-error-msg="Inserire l'username corretto!"><span xml:lang="en">Username*</span>: </label>
+                  <label for="Username" data-error-msg="Inserire l'username corretto!"><span lang="en">Username*</span>: </label>
                </div>
                <div class="text-box">
                   <span>
-                     <input type="text" id="Username" name="Username" placeholder="Username"
-                     required="required" maxlength="20" pattern="[a-zA-Z0-9_-]{3,16}" data-rules="required,username,maxlength" aria-required="true" aria-label="Campo dove inserire lo username"/>
+                     <input type="text" id="Username" name="Username" placeholder="Username" maxlength="20" pattern="[a-zA-Z0-9_-]{3,16}" data-rules="required,username,maxlength" aria-required="true" aria-label="Campo dove inserire lo username"/>
                   </span>
                </div>
             </fieldset>
             <fieldset class="align">
                <div class="title-amministration">
-                  <label for="Password" data-error-msg="Inserire la password corretta!"><span xml:lang="en">Password*</span>: </label>
+                  <label for="Password" data-error-msg="Inserire la password corretta!"><span lang="en">Password*</span>: </label>
                </div>
                <div class="text-box">
                   <span>
-                     <input type="password" name="Password" id="Password" maxlength="20"
-                     placeholder="Password" required="required" pattern="[a-zA-Z0-9_-]{5,18}" data-rules="required,password,maxlength" aria-required="true" aria-label="Campo dove inserire la password"/>
+                     <input type="password" name="Password" id="Password" maxlength="20" placeholder="Password" pattern="[a-zA-Z0-9_-]{5,18}" data-rules="required,password,maxlength" aria-required="true" aria-label="Campo dove inserire la password"/>
                   </span>
                </div>
             </fieldset>

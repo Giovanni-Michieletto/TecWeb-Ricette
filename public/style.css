@@ -104,7 +104,7 @@ body{
 .align{
    display: flex;
    justify-content: center;
-   align-items: cennter;
+   align-items: center;
 }
 p{
    font-size: 1.1em;
