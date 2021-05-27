@@ -454,6 +454,8 @@ footer a {
 .content{
 	display: flex;
 	flex-direction: column;
+   text-align: justify;
+    padding: 1em 4em;
 	margin-top: 2em;
 	/* margin-bottom: 2em; */
 	border: 2px solid rgb(148, 148, 148);
