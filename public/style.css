@@ -961,12 +961,11 @@ justify-content: center;
    .spacer-top {
       display: none;
    }
+   .welcome h3 {
+      display: none;
+   }
    .image-container{
-      display: grid;
-      width: 100%;
-      justify-content: space-evenly;
-      margin-bottom: 1em;
-      grid-template-columns: auto auto auto;   
+      display: none;
    }
    .esempio img{
          width: 8em;
