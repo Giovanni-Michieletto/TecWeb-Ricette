@@ -860,6 +860,9 @@ justify-content: center;
       justify-content: space-between;
       bottom: 1em;
    }
+   #ricetta p{
+      padding: 0 2em 1.5em 2em;
+   }
    .tempo{
       margin-right: 1em;
    }
@@ -942,6 +945,10 @@ justify-content: center;
    }
    .card img{
       max-width: none;
+   }
+   #TornaSu{
+      bottom: 5%;
+      right: 5%;
    }
 }
 /* ============================ */
