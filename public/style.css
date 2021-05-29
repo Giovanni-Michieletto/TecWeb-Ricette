@@ -966,6 +966,9 @@ fieldset img{
    .header h1{
       font-size: 5vw;
    }
+   #percorso {
+      display: none;
+   }
    .menu {
       display: none;
    }
