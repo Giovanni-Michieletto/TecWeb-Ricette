@@ -1058,6 +1058,12 @@ justify-content: center;
       flex-direction: row;
       justify-content: space-between;
    }
+   .option-admin{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+   }
+   
    .chef img {
       display: none;
    }
