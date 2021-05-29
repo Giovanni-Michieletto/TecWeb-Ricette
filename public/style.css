@@ -651,6 +651,7 @@ justify-content: center;
       background-color: blanchedalmond;
       flex-wrap: wrap;
       grid-template-columns: auto auto;
+      align-items: center;
    }
    .hidden {
       position:absolute;
