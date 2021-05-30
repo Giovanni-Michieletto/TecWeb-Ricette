@@ -54,7 +54,7 @@
                 $page = str_replace('>valueIngredienti',' readonly>'.$Ingredienti.'" readonly ',$page);
                 $page = str_replace('>valueTesto',' readonly>'.$Testo,$page);
                 $page = str_replace('valueHashtag"',$Hashtag.'" readonly ',$page);
-                $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
+                $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" aria-label="Foto della ricetta"/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
                 $page = str_replace('Submit','Torna alla pagina amministrazione',$page);
                 $page = str_replace('valueAction','admin.php',$page);
             }
